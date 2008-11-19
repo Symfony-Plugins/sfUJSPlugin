@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" packagerversion="1.4.1" version="2.0" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+ <name>sfUJSPlugin</name>
+ <channel>pear.symfony-project.com</channel>
+ <summary>Unobstrusive JavaScript helpers</summary>
+ <description>The sfUJSPlugin proposes a set of temlate helpers that facilitate the creation of JavaScript interactions in an unobstrusive way.</description>
+ <lead>
+  <name>François Zaninotto</name>
+  <user>fzaninotto</user>
+  <email>francois.zaninotto@symfony-project.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2007-05-20</date>
+ <version>
+   <release>0.6.0</release>
+   <api>0.6.0</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://www.symfony-project.com/license">MIT license</license>
+ <notes>-</notes>
+ <contents>
+   <dir name="/">
+     <dir name="lib">
+       <file name="sfUJSFilter.class.php" role="data"/>
+       <dir name="helper">
+         <file name="UJSHelper.php" role="data"/>
+         <file name="UJSTagHelper.php" role="data"/>
+         <file name="UJSJavascriptHelper.php" role="data"/>
+       </dir>
+     </dir>
+     
+     <dir name="modules">
+       <dir name="sfUJS">
+         <dir name="actions">
+           <file name="actions.class.php" role="data"/>
+         </dir>
+       </dir>
+       <dir name="sfUJSTest">
+         <dir name="actions">
+           <file name="actions.class.php" role="data"/>
+         </dir>
+         <dir name="templates">
+           <file name="indexSuccess.php" role="data"/>
+         </dir>
+       </dir>
+     </dir>
+
+     <dir name="web">
+       <dir name="js">
+         <file name="jquery.js" role="data"/>
+       </dir>
+       <dir name="test">
+         <file name="testrunner.js" role="data"/>
+         <file name="testsuite.css" role="data"/>
+       </dir>
+     </dir>
+          
+     <file name="README" role="data"/>
+     <file name="LICENSE" role="data"/>
+   </dir>
+ </contents>
+
+ <dependencies>
+  <required>
+   <php>
+    <min>5.1.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.1</min>
+   </pearinstaller>
+   <package>
+    <name>symfony</name>
+    <channel>pear.symfony-project.com</channel>
+    <min>1.0.0</min>
+    <max>1.1.0</max>
+   </package>
+  </required>
+ </dependencies>
+
+ <phprelease>
+ </phprelease>
+
+ <changelog>
+ </changelog>
+</package>
